@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body> 
+<div class="main-container"> 
+  <div class="container">
+    <div class="nav-mob">
+      <div class="burger-close">
+        <div class="logo-mobile">
+          <img src="assets/images/logo.svg">
+        </div>
+        <svg id="svg-close" class="hide-me" width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>
+        <svg id="svg-show" class="show" onclick="toggleMe()" width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
+
+      </div> 
+      <div class="hide">
+        <div class="nav-mob-menu">
+          <ul class="menu-list-mob">
+            <li class="nav-btn">Home</li>
+            <li class="nav-btn">New</li>
+            <li class="nav-btn">Popular</li>
+            <li class="nav-btn">Trending</li>
+            <li class="nav-btn">Categories</li>
+          </ul>
+        </div>
+      </div>
+      
+      
+    </div>
+
+  <nav class="navbar">
+    <div class="logo-desktop">
+      <img src="assets/images/logo.svg">
+    </div>
+
+    <div class="nav-menu">
+    <ul class="menu-list">
+      <li class="nav-btn">Home</li>
+      <li class="nav-btn">New</li>
+      <li class="nav-btn">Popular</li>
+      <li class="nav-btn">Trending</li>
+      <li class="nav-btn">Categories</li>
+    </ul>
+  </div>
+  <div class="mb-menu">
+    <div class="burger-logo">
+      
+      
+      
+    </div>
+  </div>
+  </nav>
+</div>
+  
+  
+  
+  <div class="container">
+    <div class="header">
+      <div class="section1">
+        <div class="img-header">
+          <img id="desktop-img" src="assets/images/image-web-3-desktop.jpg" width="100%">
+          <img id="mobile-img" src="assets/images/image-web-3-mobile.jpg" width="100%">
+        </div>
+        <div class="text-header">
+
+          <div class="header-left">
+            The Bright Future of Web 3.0?
+          </div>
+
+          <div class="header-right">
+            <div id="hR-text">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </div>
+            <div class="header-button-right">
+              Read more
+            </div>
+
+          </div>
+        </div>
+        
+        
+      </div>
+      <div class="section2">
+        <div class="bigtitle">
+          <span id="big-title">New</span> 
+        </div>
+          
+        <div class="text-section2">
+          <div class="article">
+            <span class="title">Hydrogen VS Electric Cars</span>
+          
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+          </div>
+
+          <hr style="clear: both;">
+
+          <div class="article">
+            <span class="title">The Downsides of AI Artistry</span>
+          
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+
+          </div>
+
+          <hr style="clear: both;">
+
+          <div class="article">
+            <span class="title">Is VC Funding Drying Up?</span>
+          
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-sec">
+      <div class="img01">
+        <div class="imgbottom">
+          <img src="assets/images/image-retro-pcs.jpg">
+        </div>
+        <div class="textbottom">
+          <div class="text-section-bottom">
+            <span class="titlebottom">01</span>
+          </div>
+          
+          <div class="text-section-bottom">
+            <span class="subtitlebottom">Reviving Retro PCs</span>
+          </div>
+          <div class="text-section-bottom">
+            <p class="paragraphbottom">What happens when old PCs are given modern upgrades?</p>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="img02">
+        <div class="imgbottom">
+          <img src="assets/images/image-top-laptops.jpg">
+        </div>
+
+        <div class="textbottom">
+          <span class="titlebottom">02</span>
+
+          <span class="subtitlebottom">Top 10 Laptops of 2022</span>
+
+          <p class="paragraphbottom">Our best picks for various needs and budgets.</p>
+
+        </div>
+        
+      </div>
+
+      <div class="img03">
+        <div class="imgbottom">
+          <img src="assets/images/image-gaming-growth.jpg">
+        </div>
+        <div class="textbottom">
+          <span class="titlebottom">03</span>
+
+          <span class="subtitlebottom">The Growth of Gaming</span>
+
+          <p class="paragraphbottom">How the pandemic has sparked fresh opportunities.</p>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a style="color: hsl(5, 85%, 63%);" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a style="color: hsl(5, 85%, 63%);" href="#">Alexandru Russe</a>.
+  </div>
+
+<script src="css/main.js"></script>
+</div>
+</body>
+</html>

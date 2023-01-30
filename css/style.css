@@ -1,0 +1,634 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* CSS BEGINS HERE */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
+* {font-family: 'Inter', sans-serif;}
+
+
+body {
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show { 
+    display: initial;
+}
+
+
+.hide-me {
+    display: none;
+}
+
+.nav-mob {
+    transition: linear 300ms linear;
+    display: none;
+}
+
+#mobile-img {
+    display: none;
+}
+
+.mb-menu {
+    display: none;
+}
+
+.main-container {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80vmax;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 5rem;
+}
+
+.attribution {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-desktop {
+    padding: 20px;
+}
+
+.logo-mobile {
+    padding: 20px;
+    display: none;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.nav-menu {  
+    width: 100%;
+}
+
+.menu-list {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 3rem;
+}
+
+
+
+.nav-btn {
+    padding: 5px;
+    font-size: 1.5rem;
+    line-height: 2vw;
+    font-weight: 400;
+    color:  hsl(236, 13%, 42%)  ;
+}
+
+.nav-btn:hover {
+   color: hsl(5, 85%, 63%);
+   cursor: pointer;
+   transition: linear 100ms;
+}
+
+
+.header {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+}
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 {
+    color: #fff;
+    background-color:  hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+
+#big-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3.5vw;
+    font-weight: 700;
+    color:  hsl(35, 77%, 62%);
+}
+
+hr {
+    width: 100%;
+    opacity: 0.3;
+    color:  hsl(236, 13%, 42%);
+    margin: 3rem 0 3rem 0;
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    color: hsl(36, 100%, 99%)
+}
+
+
+.article p {
+    font-size: 1.2rem;
+}
+
+.title:hover {
+    color:  hsl(35, 77%, 62%);
+    transition: linear 100ms;
+    cursor: pointer;
+    
+}
+
+.text-section2 {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.article {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-header {
+    margin-top: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    gap: 2rem;
+
+}
+
+.header-left {
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    font-weight: 800;
+    color:  hsl(240, 100%, 5%);
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    color:  hsl(236, 13%, 42%);
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#hR-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.header-button-right {
+    width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 3rem;
+    background-color:   hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition: linear 100ms;
+    
+}
+
+.header-button-right:hover {
+    background-color:  hsl(240, 100%, 5%);
+
+}
+
+
+
+.bottom-sec {
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.bottom-sec img {
+    width: 100% !important;
+}
+
+.img01, .img02, .img03 {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.textbottom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 0.4rem;
+}
+
+
+
+.titlebottom {
+    font-size: 3rem;
+    color:  hsl(233, 8%, 79%);
+    font-weight: 700;
+
+}
+
+
+.subtitlebottom {
+    font-size: 1.5rem;
+    color:  hsl(240, 100%, 5%);
+    font-weight: 800;
+    transition: linear 100ms;
+}
+.subtitlebottom:hover {
+    cursor: pointer;
+    color:  hsl(5, 85%, 63%);
+
+}
+.paragraphbottom {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color:  hsl(236, 13%, 42%);
+}
+
+
+
+.attribution {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    color:  hsl(240, 100%, 5%);
+    padding-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 1460px) {
+    hr {
+        margin: 1rem 0 1rem 0 !important;
+    }
+
+    .nav-btn {
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+
+    #big-title {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+    .subtitlebottom {
+        font-size: 1.3rem;
+    }
+
+    .paragraphbottom {
+        font-size: 0.9rem;
+    }
+
+    .header-left {
+        font-size: 3rem;
+        line-height: 3.9rem;
+        margin-right: 1rem;
+        font-weight: 800;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .titlebottom {
+        font-size: 2rem;
+    }
+
+    #hR-text {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .header-left {
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .titlebottom {
+        font-size: 1.8rem;
+    }
+    .paragraphbottom {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .img01, .img02, .img03 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .textbottom {
+        gap: 0.6rem;
+        justify-content: flex-start;
+    }
+
+    .header-left {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    #hR-text {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .article p {
+        font-size: 1rem;
+    }
+
+    .titlebottom {
+        font-size: 2.2rem;
+
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    #big-title {
+        font-size: 1.1rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .article p {
+        font-size: 0.8rem;
+    }
+
+    .nav-btn {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        margin-bottom: 1rem;
+    }
+
+    .header-left {
+        font-size: 1.5rem;
+    }
+
+    #hR-text {
+        font-size: 1rem;
+    }
+
+    .header {
+        gap: 1.5rem;
+    }
+
+    .text-header {
+        margin-top: 1rem;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+    }
+  }
+
+
+@media only screen and (max-width: 760px) {
+
+
+    .logo-desktop {
+        display: none;
+    }
+
+    
+    .logo-mobile {
+        display: initial;
+    }
+
+    .nav-mob {
+        position: fixed;
+        z-index: 100;
+        display: initial;
+        width: 100vh;
+        
+        
+        
+    }
+
+    .nav-mob-menu {
+        display: flex;
+        flex-direction: row;
+        z-index: 100;
+        padding-top: 1rem;
+        position: absolute;
+        width: 100vh;
+        height: 100vh;
+        left: 40vh;
+        background-color:  hsl(36, 100%, 99%);
+        
+    }
+
+    .burger-close svg {
+        padding: 30px;
+    }
+
+
+    .menu-list-mob {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+
+    .menu-list-mob .nav-btn {
+        margin-left: 2rem;
+        padding: 2rem;
+        color:  hsl(240, 100%, 5%);
+        font-size: 1.7rem;
+        line-height: 3rem;
+        font-weight: 400;
+    }
+
+
+    .navbar {
+       
+        flex-wrap: wrap;
+    }
+
+
+    .mb-menu {
+        display: block;
+    }
+
+
+    .burger-display {
+        display: none;
+    }
+
+    .burger-close {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 80vh;
+        background-color:  hsl(36, 100%, 99%);
+    }
+
+    #desktop-img {
+        display: none;
+    }
+
+    #mobile-img {
+        display: initial;
+        width: 100%;
+        height: auto;
+    }
+    .nav-menu {
+        display: none;
+    }
+
+
+    .container {
+        margin-bottom: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .text-header {
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    
+  }
+
+
+  @media only screen and (max-width: 580px) {
+
+
+    .bottom-sec {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .img01, .img02, .img03 {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+    }
+
+
+  }
