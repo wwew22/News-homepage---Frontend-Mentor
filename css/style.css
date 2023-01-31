@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+
  
 /* CSS RESET */
 
@@ -73,17 +75,15 @@ body {
     align-items: flex-start;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 .imgbottom img {
     
-    transition: all 300ms;
+    transition: all 200ms;
 }
 
 .imgbottom img:hover {
-    transform: scale(1.2);
+    transform: scale(0.9);
 
 }
 
@@ -200,7 +200,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
@@ -213,11 +213,10 @@ img {
     color:  hsl(35, 77%, 62%);
 }
 
-hr {
+.line {
     width: 100%;
-    opacity: 0.3;
-    color:  hsl(236, 13%, 42%);
-    margin: 3rem 0 3rem 0;
+    border: 1px solid hsl(236, 13%, 42%);
+    margin: 2rem 0 2rem 0;
 }
 
 .title {
@@ -319,9 +318,7 @@ hr {
 }
 
 
-.bottom-sec img {
-    width: 100% !important;
-}
+
 
 .img01, .img02, .img03 {
     display: flex;
@@ -525,7 +522,7 @@ hr {
     position: fixed;
     z-index: 100;
     top: 1rem;
-    right: 1rem;
+    right: 2.8rem;
     padding: 4px;
     cursor: pointer;
     background-color:  hsl(36, 100%, 99%);
@@ -533,11 +530,11 @@ hr {
 
   .menu-list-mob {
     position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.5s;
+    transform: translateY(-120%);
+    transition: transform 1s;
     background-color:  hsl(36, 100%, 99%);
-    top: 3rem;
-    right: 3rem;
+    top: 4.1rem;
+    right: 6.3rem;
     bottom: 0;
     z-index: 99;
   }
@@ -606,7 +603,7 @@ hr {
     .menu-list-mob .nav-btn {
         width: 100%;
         background-color:  hsl(36, 100%, 99%);
-        margin-left: 2rem;
+        margin-left: 100vh;
         padding: 2rem;
         color:  hsl(240, 100%, 5%);
         font-size: 1.3rem;
@@ -641,7 +638,7 @@ hr {
         justify-content: space-between;
         position: fixed;
         top: 0;
-        width: 80vh;
+        width: 100%;
         background-color:  hsl(36, 100%, 99%);
     }
 
@@ -660,6 +657,7 @@ hr {
 
 
     .container {
+        width: 100% !important;
         margin-bottom: 1rem;
     }
 
@@ -683,7 +681,7 @@ hr {
     }
 
     .footer {
-    width: 80vmax;
+    
     flex-wrap: wrap;
     height: auto;
     display: flex;
@@ -693,19 +691,24 @@ hr {
     }
 
     
-  }
-
+  } 
 
   @media only screen and (max-width: 580px) {
 
+    .header-button-right {
+        width: 12rem;
+    }
 
     .bottom-sec {
         flex-direction: column;
         justify-content: flex-start;
         align-content: center;
+        flex-wrap: wrap;
     }
 
     .img01, .img02, .img03 {
+
+        gap: 0;
         margin: 0 1rem 1rem 1rem;
         flex-direction: row;
         justify-content: flex-start;
