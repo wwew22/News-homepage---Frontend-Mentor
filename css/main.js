@@ -1,26 +1,20 @@
 
-function toggleMe() {
-    let x = document.getElementsByClassName("hide");
-    let y = document.getElementsByClassName("show");
+const menu = document.querySelector(".hamburger");
+const menuItems = document.querySelectorAll(".menuItemMob");
+const hamburger= document.querySelector(".hamburger");
+const closeIcon= document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
 
-    for (let i = 0; i < x.length; i++) {
-        x[i].classList.toggle("show");
-    }
-
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    closeIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    closeIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
 }
 
-const open = document.querySelector('#open-modal');
-const closeModalBtn = document.querySelector('#close');
-const modal = document.querySelector('.modal-container');
-// Open modal
-open.addEventListener('click', () => {
-    modal.style.display = 'block';
-// add modal-active class
-    document.body.classList.add('modal-active');
-});
-// Close modal
-closeModalBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-// remove modal-active class
-    document.body.classList.remove('modal-active');
-});
+hamburger.addEventListener("click", toggleMenu);
