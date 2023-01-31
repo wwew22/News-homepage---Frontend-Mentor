@@ -4,6 +4,7 @@
 */
 
 
+ 
 /* CSS RESET */
 
 html, body, div, span, applet, object, iframe,
@@ -62,11 +63,24 @@ table {
 
 
 body {
-    z-index: 99;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.imgbottom img {
+    
+    transition: all 300ms;
+}
+
+.imgbottom img:hover {
+    transform: scale(1.2);
+
 }
 
 
@@ -426,7 +440,7 @@ hr {
 
     .textbottom {
         gap: 0.6rem;
-        justify-content: flex-start;
+        margin-left: 1.2rem;
     }
 
     .header-left {
@@ -500,6 +514,15 @@ hr {
 
 @media only screen and (max-width: 760px) {
 
+    body {
+        display: initial;
+        width: 100% !important;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
 
     .logo-desktop {
         display: none;
@@ -512,9 +535,7 @@ hr {
 
     .nav-mob {
         position: fixed;
-        z-index: 100;
         display: initial;
-        width: 100vh;
         
         
         
@@ -528,6 +549,7 @@ hr {
         position: absolute;
         width: 100vh;
         height: 100vh;
+        top: 2rem;
         left: 40vh;
         background-color:  hsl(36, 100%, 99%);
         
@@ -604,11 +626,27 @@ hr {
     }
 
     .text-header {
-        margin-top: 1rem;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 1rem;
+        margin: 1rem;
+    }
+
+    .attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+    width: 80vmax;
+    flex-wrap: wrap;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
     }
 
     
@@ -625,6 +663,7 @@ hr {
     }
 
     .img01, .img02, .img03 {
+        margin: 0 1rem 1rem 1rem;
         flex-direction: row;
         justify-content: flex-start;
         align-content: space-between;
